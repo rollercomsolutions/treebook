@@ -8,12 +8,12 @@ Treebook::Application.routes.draw do
     get 'login', to: 'devise/sessions#new', as: :login
     get 'logout', to: 'devise/sessions#destroy', as: :logout
     get 'edit', to: 'devise/registrations#edit', as: :edit
-
   end
 
   resources :statuses
   get 'feed', to: 'statuses#index', as: :feed
   root to: 'statuses#index'
+  get '/:id', to: 'profiles#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

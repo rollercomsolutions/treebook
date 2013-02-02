@@ -3,3 +3,9 @@ roll:
    last_name: "test"
    email: "roll@rollercomsolutions.com"
    profile_name: "roll"
+
+rolla:
+   first_name: "rolla"
+   last_name: "testa"
+   email: "rolla@rollercomsolutions.com"
+   profile_name: "rolla"

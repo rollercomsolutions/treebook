@@ -22,4 +22,9 @@ class CustomRoutesTest < ActionDispatch::IntegrationTest
   	assert_response :redirect
   	assert_redirected_to '/users/sign_in'
   end
+
+  test "that a profile page works" do
+    get '/roll'
+    assert_response :success
+  end
 end

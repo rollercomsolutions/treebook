@@ -20,9 +20,9 @@ class User < ActiveRecord::Base
                              with: /^[a-zA-Z0-9_-]+$/,
                              message: 'Must be formatted correctly.'
                            }
-
-
   has_many :statuses
 
-
+  def full_name
+    first_name + " " + last_name
+  end
 end
